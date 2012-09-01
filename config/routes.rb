@@ -3,6 +3,8 @@ Prelaunch::Application.routes.draw do
 
   root :to => "pages#home"
 
+	# Reroute all pages to root.
+	match '*path' => redirect('/')
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
