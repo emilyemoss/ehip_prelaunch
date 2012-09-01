@@ -1,0 +1,105 @@
+$navbarBackground: #FF0000;
+$navbarBackgroundHighlight: #CC0000;
+
+@import "bootstrap";
+@import "bootstrap-responsive";
+@import url(http://fonts.googleapis.com/css?family=Puritan:400,700|Dawning+of+a+New+Day); 
+
+
+/* universal */
+
+html {
+  overflow-y: scroll;
+}
+
+body {
+  padding-top: 60px;
+}
+
+section {
+  overflow: auto;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.center {
+  text-align: center;
+  h1 {
+  	margin-bottom: 10px;
+  }
+}
+
+footer {
+	padding-bottom: 40px;
+}
+
+.pull-center { 
+	text-align: center; 
+}
+
+.btn{
+	h3 {
+		font-family: 'Puritan', sans-serif;
+		padding: 0px 20px;
+		margin: 0px;
+	}
+}
+
+/*** NAVBAR ***/
+
+.follow {
+	padding: 10px 3px 10px 3px;
+	margin: 0;
+} 
+.navbar .brand {
+	padding: 0;
+	margin: 0;
+}
+
+/*** Mixins, Variables, etc. ***/
+
+$grayMediumLight: #eaeaea;
+
+@mixin box_sizing {
+  -moz-box-sizing: border-box; 
+  -webkit-box-sizing: border-box; 
+  box-sizing: border-box;
+}
+
+/*** MISC ***/
+
+.debug_dump {
+  clear: both;
+  float: left;
+  width: 100%;
+  margin-top: 45px;
+  @include box_sizing;
+}
+
+/*** PRELAUNCH ***/
+
+.hero-unit-prelaunch {
+	font-family: 'Puritan', sans-serif; 
+	background: white; 
+	background-image: image_url("world_small_light.png");
+	background-repeat: no-repeat; 
+	background-position: right center;
+	h1 {
+		font-family: 'Dawning of a New Day', cursive;
+	}
+	h2 {
+		font-family: 'Puritan', sans-serif; 
+		color: orange; 
+		text-transform: uppercase;
+	}	
+}
+
+.logo-prelaunch {
+	background-image: image_url("ehip_new_250.png"); 
+	background-repeat: no-repeat; 
+	background-position: left center;
+}
+
+
